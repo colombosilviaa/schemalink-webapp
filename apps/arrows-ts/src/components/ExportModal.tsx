@@ -82,6 +82,8 @@ class ExportModal extends Component<ExportModalProps, ExportModalState> {
         properties: rel.properties || {},
         required: rel.required,
         constraints: (rel as any).constraints || [],
+        source_minimum_cardinality: rel.source_minimum_cardinality,
+        source_maximum_cardinality: rel.source_maximum_cardinality,
         target_minimum_cardinality: rel.target_minimum_cardinality,
         target_maximum_cardinality: rel.target_maximum_cardinality,
       })),
